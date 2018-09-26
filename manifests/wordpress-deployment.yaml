@@ -75,4 +75,3 @@ spec:
         persistentVolumeClaim:
           claimName: wp-pv-claim
 
-
