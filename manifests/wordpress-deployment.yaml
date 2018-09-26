@@ -13,6 +13,7 @@ spec:
   ports:
     - port: 443
       targetPort: 80
+      protocol: TCP
   selector:
     app: wordpress
     tier: frontend
