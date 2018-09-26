@@ -12,6 +12,7 @@ metadata:
 spec:
   ports:
     - port: 443
+      targetPort: 80
   selector:
     app: wordpress
     tier: frontend
