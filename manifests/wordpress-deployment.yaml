@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wordpress
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "True"
+    service.beta.kubernetes.io/aws-load-balancer-extra-security-groups: sg-db0381a4
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-west-1:479538688166:certificate/fbc1be03-ad49-4b38-b2e0-25769f017e26
   labels:
     app: wordpress
 spec:
